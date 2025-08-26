@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url('/52913.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* ---------- SECCIÓN PORTAFOLIO ---------- */
+#portfolio {
+    padding: 50px 50px 50px; /* espacio uniforme */
+    min-height: 100vh;
+}
+
+.portfolio-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portfolio-header h2 {
+    font-size: 36px;
+    color: #577096;
+}
+
+/* Grilla de proyectos */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+    color: #E0E0E0;
+    width: 100%;
+    max-width: 350px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 247, 255, 0.2);
+}
+
+.project-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-img img {
+    transform: scale(1.1);
+}
+
+.project-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.project-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.project-info p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.project-link {
+    color: #577096;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+    color: #7FC8F8;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    #portfolio {
+        padding: 50px 30px;
+    }
+
+    .portfolio-header h2 {
+        font-size: 28px;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+    #portfolio {
+        padding: 40px 20px;
+    }
+
+    .portfolio-header h2 {
+        font-size: 24px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-info h3 {
+        font-size: 20px;
+    }
+
+    .project-info p {
+        font-size: 14px;
+    }
+}
+
+/* Extra pequeño */
+@media (max-width: 480px) {
+    #portfolio {
+        padding: 30px 15px;
+    }
+
+    .portfolio-header h2 {
+        font-size: 20px;
+    }
+
+    .project-info h3 {
+        font-size: 18px;
+    }
+
+    .project-info p {
+        font-size: 12px;
+    }
+}
