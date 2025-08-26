@@ -13,7 +13,7 @@
     <section id="home">
         <div class="presentation">
             <h1>¡Hola, soy Jeff!</h1>
-            <p class="description">Desarrollador de Software y Analista de Datos. Me apasiona crear soluciones digitales eficientes y transformar datos en información valiosa.
+            <p class="description">Desarrollador de software apasionado por crear aplicaciones web y soluciones tecnológicas eficientes. Me especializo en Python, JavaScript, Java y C#. Disfruto transformar ideas en proyectos funcionales e interactivos.
                 <a href="https://wa.me/50671736440" target="_blank" class="linkedin-icon">
                     <i class="fab fa-whatsapp"></i>
                 </a>
@@ -46,11 +46,20 @@
     <!-- Sección ABOUT -->
     <section id="about" class="section">
         <h2>Sobre mí</h2>
-        <p>Desarrollador de Software y Analista de Datos. Me especializo en el desarrollo de aplicaciones web y el análisis de datos para tomar decisiones informadas. Me encanta aprender nuevas tecnologías y aplicarlas en proyectos que aporten valor real.</p>
+        <p>Formación en Ingeniería de Sistemas y títulos en Desarrollo de Software y Análisis de Datos, me destaco por mi enfoque multidisciplinario. He trabajado activamente en proyectos, implementando funcionalidades de 
+            backend y frontend para asegurar una integración efectiva. Mi experiencia abarca desde el 
+            desarrollo de aplicaciones escalables hasta el análisis de datos, la minería de datos y la construcción de modelos predictivos. Además, he colaborado en equipos aplicando 
+            metodologías ágiles como Scrum y realizando pruebas funcionales para garantizar la calidad del software. Siempre estoy buscando oportunidades para crecer profesionalmente y aplicar mis conocimientos para crear un impacto significativo</p>
+            <!-- Botón para descargar CV -->
+       <div class="btn-container-cv" style="margin-top: 20px;">
+            <a href="/CV_Oficial.pdf" download class="btn">
+                <i class="fas fa-download"></i> Descargar CV
+            </a>
+        </div>
 
         <!-- Skills -->
         <div class="skills-section">
-            <h2>── Skills</h2>
+            <h2>Skills</h2>
             <div class="skill-tabs">
                 <div class="skill-tab active" onclick="showSkills('tech-stack')">Tech Stack</div>
                 <div class="skill-tab" onclick="showSkills('tools')">Tools</div>
@@ -96,17 +105,26 @@
         <div class="projects-container">
             <!-- Proyecto 1 con modal -->
             <div class="project-card" id="project1">
-                <div class="project-img"><img src="/Reclutamiento/usuario.png" alt="Proyecto 1"></div>
+                <div class="project-img"><img src="/Mis proyectos/Reclutamiento/usuario.png" alt="Proyecto 1"></div>
                 <div class="project-info">
                     <h3>Sitio de Reclutamiento</h3>
                     <p>Aplicación web que permite a empresas y usuarios gestionar procesos de reclutamiento.</p>
                     <button class="btn-ver-mas" onclick="openModal('modalProject1')">Ver más</button>
                 </div>
             </div>
+            <!-- Proyecto 2 con modal -->
+            <div class="project-card" id="project1">
+                <div class="project-img"><img src="/Mis proyectos/GymApp/usuario.png" alt="Proyecto 2"></div>
+                <div class="project-info">
+                    <h3>Gym App</h3>
+                    <p>Aplicación web para ayudar a los usuarios a planificar y seguir sus entrenamientos. Permite crear rutinas personalizadas, registrar el progreso diario y consultar ejercicios</p>
+                    <button class="btn-ver-mas" onclick="openModal('modalProject1')">Ver más</button>
+                </div>
+            </div>
 
-            <!-- Proyecto 2 sin modal -->
+            <!-- Proyecto 3 sin modal -->
             <div class="project-card">
-                <div class="project-img"><img src="/freenlacer.png" alt="Proyecto 2"></div>
+                <div class="project-img"><img src="/Mis proyectos/freenlacer.png" alt="Proyecto 3"></div>
                 <div class="project-info">
                     <h3>Sitio Freelancer</h3>
                     <p>Plataforma para mostrar proyectos y servicios freelance profesionales.</p>
@@ -114,12 +132,11 @@
                 </div>
             </div>
 
-            <!-- Proyecto 3 sin modal -->
-
+            
 
             <!-- Proyecto 4 sin modal -->
             <div class="project-card">
-                <div class="project-img"><img src="/cafe.png" alt="Proyecto 4"></div>
+                <div class="project-img"><img src="/Mis proyectos/cafe.png" alt="Proyecto 4"></div>
                 <div class="project-info">
                     <h3>Blog para cursos y talleres</h3>
                     <p>Blog dedicado al café, ofreciendo cursos y talleres para aprender.</p>
@@ -129,7 +146,7 @@
 
             <!-- Proyecto 5 sin modal -->
             <div class="project-card">
-                <div class="project-img"><img src="/frondendstore.png" alt="Proyecto 5"></div>
+                <div class="project-img"><img src="/Mis proyectos/frondendstore.png" alt="Proyecto 5"></div>
                 <div class="project-info">
                     <h3>Portafolio Artístico</h3>
                     <p>Sitio web para mostrar trabajos creativos con galería interactiva.</p>
@@ -143,7 +160,7 @@
             <div class="modal-content">
                 <span class="close" onclick="closeModal('modalProject1')">&times;</span>
                 <!-- Imagen principal de la galería -->
-                <img id="gallery-img" src="/Reclutamiento/usuario.png" alt="Proyecto 1">
+                <img id="gallery-img" src="/Mis proyectos/Reclutamiento/usuario.png" alt="Proyecto 1">
                 <h2>Tecnologías:</h2>
                 <p>
                     <br>- Frontend: HTML, CSS, JavaScript (Controllers y Services).
@@ -179,6 +196,8 @@
         }
 
         document.querySelectorAll('.btn').forEach(btn => {
+    // Solo aplicar scroll a los links internos que comiencen con #
+        if(btn.getAttribute('href').startsWith('#')) {
             btn.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
@@ -189,7 +208,9 @@
                 const offsetPosition = elementPosition - offset;
                 window.scrollTo({ top: offsetPosition, behavior: "smooth" });
             });
-        });
+        }
+    });
+
 
         function openModal(id) {
             document.getElementById(id).style.display = 'flex';
