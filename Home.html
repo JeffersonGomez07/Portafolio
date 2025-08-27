@@ -6,25 +6,23 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="/CSS/Home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 <body>
     <!-- Sección HOME -->
     <section id="home">
         <div class="presentation">
             <h1>¡Hola, soy Jeff!</h1>
-            <p class="description">Desarrollador de software apasionado por crear aplicaciones web y soluciones tecnológicas eficientes. Me especializo en Python, JavaScript, Java y C#. Disfruto transformar ideas en proyectos funcionales e interactivos.
+            <p class="description">
+                Desarrollador de software apasionado por crear aplicaciones web y soluciones tecnológicas eficientes. Me especializo en Python, JavaScript, Java y C#. Disfruto transformar ideas en proyectos funcionales e interactivos.
                 <a href="https://wa.me/50671736440" target="_blank" class="linkedin-icon">
                     <i class="fab fa-whatsapp"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/jeffersongomez7173" target="_blank" class="linkedin-icon">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jeffermp40@gmail.com" target="_blank" class="email-icon">
+                <a href="mailto:jeffermp40@gmail.com" target="_blank" class="email-icon">
                     <i class="fas fa-envelope"></i>
                 </a>
-
-                
             </p>
             
             <div class="btn-container">
@@ -38,20 +36,15 @@
             <img src="/Foto.png" alt="Foto de perfil">
         </div>
     </section>
-    
-</div>
-
-    
 
     <!-- Sección ABOUT -->
     <section id="about" class="section">
         <h2>Sobre mí</h2>
-        <p>Formación en Ingeniería de Sistemas y títulos en Desarrollo de Software y Análisis de Datos, me destaco por mi enfoque multidisciplinario. He trabajado activamente en proyectos, implementando funcionalidades de 
-            backend y frontend para asegurar una integración efectiva. Mi experiencia abarca desde el 
-            desarrollo de aplicaciones escalables hasta el análisis de datos, la minería de datos y la construcción de modelos predictivos. Además, he colaborado en equipos aplicando 
-            metodologías ágiles como Scrum y realizando pruebas funcionales para garantizar la calidad del software. Siempre estoy buscando oportunidades para crecer profesionalmente y aplicar mis conocimientos para crear un impacto significativo</p>
-            <!-- Botón para descargar CV -->
-       <div class="btn-container-cv" style="margin-top: 20px;">
+        <p>
+            Formación en Ingeniería de Sistemas y títulos en Desarrollo de Software y Análisis de Datos, me destaco por mi enfoque multidisciplinario. He trabajado activamente en proyectos, implementando funcionalidades de backend y frontend para asegurar una integración efectiva. Mi experiencia abarca desde el desarrollo de aplicaciones escalables hasta el análisis de datos, la minería de datos y la construcción de modelos predictivos. Además, he colaborado en equipos aplicando metodologías ágiles como Scrum y realizando pruebas funcionales para garantizar la calidad del software. Siempre estoy buscando oportunidades para crecer profesionalmente y aplicar mis conocimientos para crear un impacto significativo.
+        </p>
+
+        <div class="btn-container-cv" style="margin-top: 20px;">
             <a href="/CV_Oficial.pdf" download class="btn">
                 <i class="fas fa-download"></i> Descargar CV
             </a>
@@ -66,7 +59,6 @@
             </div>
             
             <div class="skills-container" id="tech-stack">
-                <!-- Tech stack items -->
                 <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span>HTML</span></div>
                 <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span>CSS</span></div>
                 <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
@@ -80,7 +72,6 @@
             </div>
             
             <div class="skills-container" id="tools" style="display: none;">
-                <!-- Tools items -->
                 <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git</span></div>
                 <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"><span>VS Code</span></div>
                 <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" alt="Visual Studio"><span>Visual Studio</span></div>
@@ -103,40 +94,49 @@
         <p>Aquí encontrarás algunos de mis trabajos más recientes en desarrollo web y aplicaciones interactivas.</p>
 
         <div class="projects-container">
-            <!-- Proyecto 1 con modal -->
-            <div class="project-card" id="project1">
+            <!-- Proyecto 1 -->
+            <div class="project-card">
                 <div class="project-img"><img src="/Mis proyectos/Reclutamiento/usuario.png" alt="Proyecto 1"></div>
                 <div class="project-info">
                     <h3>Sitio de Reclutamiento</h3>
                     <p>Aplicación web que permite a empresas y usuarios gestionar procesos de reclutamiento.</p>
-                    <button class="btn-ver-mas" onclick="openModal('modalProject1')">Ver más</button>
-                </div>
-            </div>
-            <!-- Proyecto 2 con modal -->
-            <div class="project-card" id="project1">
-                <div class="project-img"><img src="/Mis proyectos/GymApp/usuario.png" alt="Proyecto 2"></div>
-                <div class="project-info">
-                    <h3>Gym App</h3>
-                    <p>Aplicación web para ayudar a los usuarios a planificar y seguir sus entrenamientos. Permite crear rutinas personalizadas, registrar el progreso diario y consultar ejercicios</p>
-                    <button class="btn-ver-mas" onclick="openModal('modalProject1')">Ver más</button>
+                    <button class="btn-ver-mas" onclick="openModal('modalProject1', reclutamientoImages)">Ver más</button>
                 </div>
             </div>
 
-            <!-- Proyecto 3 sin modal -->
+            <!-- Proyecto 2 -->
             <div class="project-card">
-                <div class="project-img"><img src="/Mis proyectos/freenlacer.png" alt="Proyecto 3"></div>
+                <div class="project-img"><img src="/Mis proyectos/GymApp/Gym App_page-0001.jpg" alt="Proyecto 2"></div>
+                <div class="project-info">
+                    <h3>Gym App</h3>
+                    <p>Aplicación web para planificar y seguir entrenamientos.</p>
+                    <button class="btn-ver-mas" onclick="openModal('modalProject2', gymAppImages)">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="project-card">
+                <div class="project-img"><img src="/Mis proyectos/Hotel/Hotel.png" alt="Proyecto 3"></div>
+                <div class="project-info">
+                    <h3>Hotel</h3>
+                    <p>Aplicación web de gestión hotelera en desarrollo usando Flask, HTML, CSS y JavaScript.</p>
+                    <button class="btn-ver-mas" onclick="openModal('modalProject3', hotelImages)">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Proyecto 4 -->
+            <div class="project-card">
+                <div class="project-img"><img src="/Mis proyectos/freenlacer.png" alt="Proyecto 4"></div>
                 <div class="project-info">
                     <h3>Sitio Freelancer</h3>
-                    <p>Plataforma para mostrar proyectos y servicios freelance profesionales.</p>
+                    <p>Plataforma para mostrar proyectos y servicios freelance.</p>
                     <a href="https://freelancerjeffgomez.netlify.app/" target="_blank" class="btn-ver-mas">Ver más</a>
                 </div>
             </div>
 
-            
-
-            <!-- Proyecto 4 sin modal -->
+            <!-- Proyecto 5 -->
             <div class="project-card">
-                <div class="project-img"><img src="/Mis proyectos/cafe.png" alt="Proyecto 4"></div>
+                <div class="project-img"><img src="/Mis proyectos/cafe.png" alt="Proyecto 5"></div>
                 <div class="project-info">
                     <h3>Blog para cursos y talleres</h3>
                     <p>Blog dedicado al café, ofreciendo cursos y talleres para aprender.</p>
@@ -144,9 +144,9 @@
                 </div>
             </div>
 
-            <!-- Proyecto 5 sin modal -->
+            <!-- Proyecto 6 -->
             <div class="project-card">
-                <div class="project-img"><img src="/Mis proyectos/frondendstore.png" alt="Proyecto 5"></div>
+                <div class="project-img"><img src="/Mis proyectos/frondendstore.png" alt="Proyecto 6"></div>
                 <div class="project-info">
                     <h3>Portafolio Artístico</h3>
                     <p>Sitio web para mostrar trabajos creativos con galería interactiva.</p>
@@ -155,28 +155,67 @@
             </div>
         </div>
 
-        <!-- Modal Proyecto 1 -->
+        <!-- Modales -->
         <div id="modalProject1" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal('modalProject1')">&times;</span>
-                <!-- Imagen principal de la galería -->
-                <img id="gallery-img" src="/Mis proyectos/Reclutamiento/usuario.png" alt="Proyecto 1">
-                <h2>Tecnologías:</h2>
-                <p>
-                    <br>- Frontend: HTML, CSS, JavaScript (Controllers y Services).
-                    <br>- Backend: Node.js, Express.js.
-                    <br>- Base de datos: MongoDB
-                    <br>- Arquitectura: Separación en API (lógica y rutas) y Public (interfaz).
-
-                </p>
+                <img id="gallery-img" src="" alt="Galería proyecto">
                 <div class="gallery-controls">
                     <button onclick="prevImage()">&#10094; Anterior</button>
                     <button onclick="nextImage()">Siguiente &#10095;</button>
                 </div>
+                <h2>Tecnologías:</h2>
+                <p>
+                    - Frontend: HTML, CSS, JavaScript (Controllers y Services).<br>
+                    - Backend: Node.js, Express.js.<br>
+                    - Base de datos: MongoDB.<br>
+                    - Arquitectura: Separación en API (lógica y rutas) y Public (interfaz).
+                </p>
             </div>
         </div>
 
+        <div id="modalProject2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modalProject2')">&times;</span>
+                <img id="gallery-img" src="" alt="Galería proyecto">
+                <div class="gallery-controls">
+                    <button onclick="prevImage()">&#10094; Anterior</button>
+                    <button onclick="nextImage()">Siguiente &#10095;</button>
+                </div>
+                <h2>Tecnologías:</h2>
+                <p>
+                    -Frontend: ASP.NET MVC (HTML, CSS, JavaScript) <br>
+                    -Backend: .NET (C#) <br>
+                    -Base de datos: SQL Server <br>
+                    -Arquitectura: Capas: API, DTO, Business Logic, Data Access y MVC <br>
+                    Funcionalidades: <br>
+                    -CRUD de usuarios, rutinas y ejercicios <br>
+                    -Autenticación y roles (usuario, entrenador, admin) <br>
+                    -Seguimiento de progreso y estadísticas de entrenamiento <br>
+                </p>
+            </div>
+        </div>
 
+        <div id="modalProject3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modalProject3')">&times;</span>
+                <img id="gallery-img" src="" alt="Galería proyecto">
+                <div class="gallery-controls">
+                    <button onclick="prevImage()">&#10094; Anterior</button>
+                    <button onclick="nextImage()">Siguiente &#10095;</button>
+                </div>
+                <h2>Tecnologías:</h2>
+                <p>
+                    - Frontend: HTML, CSS, JavaScript (Templates y scripts).<br>
+                    - Backend: Python con Flask.<br>
+                    - Base de datos: SQL Server.<br>
+                    - Arquitectura: Separación en Models (datos), Routes (controladores) y Templates (vistas).<br>
+                    - Funcionalidades: CRUD, autenticación de usuarios y manejo de sesiones.<br>
+                    - Estilo: CSS personalizado para diseño responsive.
+
+                </p>
+            </div>
+        </div>
     </section>
 
     <!-- Sección BLOG -->
@@ -186,78 +225,88 @@
     </section>
 
     <script>
+        // Scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e){
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Skills
         function showSkills(tabId) {
-            const containers = document.querySelectorAll('.skills-container');
-            containers.forEach(c => c.style.display = 'none');
-            const tabs = document.querySelectorAll('.skill-tab');
-            tabs.forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.skills-container').forEach(c => c.style.display = 'none');
+            document.querySelectorAll('.skill-tab').forEach(t => t.classList.remove('active'));
             document.getElementById(tabId).style.display = 'flex';
             document.querySelector(`[onclick="showSkills('${tabId}')"]`).classList.add('active');
         }
 
-        document.querySelectorAll('.btn').forEach(btn => {
-    // Solo aplicar scroll a los links internos que comiencen con #
-        if(btn.getAttribute('href').startsWith('#')) {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                const offset = 20;
-                const bodyRect = document.body.getBoundingClientRect().top;
-                const elementRect = target.getBoundingClientRect().top;
-                const elementPosition = elementRect - bodyRect;
-                const offsetPosition = elementPosition - offset;
-                window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-            });
-        }
-    });
+        // Galerías de proyectos
+        const reclutamientoImages = [
+            "/Mis proyectos/Reclutamiento/usuario.png",
+            "/Mis proyectos/Reclutamiento/reclutador.png",
+            "/Mis proyectos/Reclutamiento/manager.png",
+            "/Mis proyectos/Reclutamiento/admin.png"
+        ];
+        const gymAppImages = [
+            "/Mis proyectos/GymApp/Gym App_page-0001.jpg",
+            "/Mis proyectos/GymApp/Gym App_page-0002.jpg",
+            "/Mis proyectos/GymApp/Gym App_page-0003.jpg",
+            "/Mis proyectos/GymApp/Gym App_page-0004.jpg",
+            "/Mis proyectos/GymApp/Gym App_page-0005.jpg",
+            "/Mis proyectos/GymApp/Gym App_page-0006.jpg",
+            "/Mis proyectos/GymApp/Gym App_page-0007.jpg",
+            "/Mis proyectos/GymApp/Gym App_page-0008.jpg",
+            "/Mis proyectos/GymApp/Gym App_page-0009.jpg",
+            "/Mis proyectos/GymApp/Gym App_page-0010.jpg",
+            "/Mis proyectos/GymApp/Gym App_page-0011.jpg",
+            "/Mis proyectos/GymApp/Gym App_page-0012.jpg",
+            "/Mis proyectos/GymApp/Gym App_page-0013.jpg",
+            "/Mis proyectos/GymApp/Gym App_page-0014.jpg",
+            "/Mis proyectos/GymApp/Gym App_page-0015.jpg",
+            "/Mis proyectos/GymApp/Gym App_page-0016.jpg",
+            "/Mis proyectos/GymApp/Gym App_page-0017.jpg",
+            "/Mis proyectos/GymApp/Gym App_page-0018.jpg"
+            
+            // Agregar más si quieres
+        ];
+        const hotelImages = [
+            "/Mis proyectos/Hotel/Hotel.png"
+            // Agregar más si quieres
+        ];
 
+        let currentImages = [];
+        let currentImageIndex = 0;
 
-        function openModal(id) {
+        function openModal(id, images) {
             document.getElementById(id).style.display = 'flex';
+            currentImages = images;
+            currentImageIndex = 0;
+            document.querySelector(`#${id} #gallery-img`).src = currentImages[currentImageIndex];
         }
 
         function closeModal(id) {
             document.getElementById(id).style.display = 'none';
         }
 
-        // Lista de imágenes de la galería
-// Lista de imágenes de la galería
-const galleryImages = [
-    "/Reclutamiento/usuario.png",
-    "/Reclutamiento/reclutador.png",
-    "/Reclutamiento/manager.png",
-    "/Reclutamiento/admin.png"
-];
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % currentImages.length;
+            document.querySelectorAll('#gallery-img').forEach(img => img.src = currentImages[currentImageIndex]);
+        }
 
-let currentImageIndex = 0;
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + currentImages.length) % currentImages.length;
+            document.querySelectorAll('#gallery-img').forEach(img => img.src = currentImages[currentImageIndex]);
+        }
 
-// Al abrir el modal, mostrar la primera imagen
-function openModal(id) {
-    document.getElementById(id).style.display = 'flex';
-    currentImageIndex = 0;
-    document.getElementById("gallery-img").src = galleryImages[currentImageIndex];
-}
-
-function closeModal(id) {
-    document.getElementById(id).style.display = 'none';
-}
-
-// Funciones para navegar entre imágenes
-function nextImage() {
-    currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
-    document.getElementById("gallery-img").src = galleryImages[currentImageIndex];
-}
-
-function prevImage() {
-    currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
-    document.getElementById("gallery-img").src = galleryImages[currentImageIndex];
-}
-window.addEventListener('click', (e) => {
-    const modal = document.getElementById('modalProject1');
-    if(e.target === modal) closeModal('modalProject1');
-});
-
-
+        // Cerrar modal al hacer clic fuera
+        window.addEventListener('click', (e) => {
+            document.querySelectorAll('.modal').forEach(modal => {
+                if(e.target === modal) modal.style.display = 'none';
+            });
+        });
     </script>
 </body>
 </html>
