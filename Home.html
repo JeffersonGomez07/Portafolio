@@ -126,7 +126,7 @@
 
             <!-- Proyecto 4 -->
             <div class="project-card">
-                <div class="project-img"><img src="/Mis proyectos/freenlacer.png" alt="Proyecto 4"></div>
+                <div class="project-img"><img src="/Mis proyectos/freenlancer/freenlacer.png" alt="Proyecto 4"></div>
                 <div class="project-info">
                     <h3>Sitio Freelancer</h3>
                     <p>Plataforma para mostrar proyectos y servicios freelance.</p>
@@ -136,7 +136,7 @@
 
             <!-- Proyecto 5 -->
             <div class="project-card">
-                <div class="project-img"><img src="/Mis proyectos/cafe.png" alt="Proyecto 5"></div>
+                <div class="project-img"><img src="/Mis proyectos//cafe/cafe.png" alt="Proyecto 5"></div>
                 <div class="project-info">
                     <h3>Blog para cursos y talleres</h3>
                     <p>Blog dedicado al café, ofreciendo cursos y talleres para aprender.</p>
@@ -146,11 +146,21 @@
 
             <!-- Proyecto 6 -->
             <div class="project-card">
-                <div class="project-img"><img src="/Mis proyectos/frondendstore.png" alt="Proyecto 6"></div>
+                <div class="project-img"><img src="/Mis proyectos/frondendstore/frondendstore.png" alt="Proyecto 6"></div>
                 <div class="project-info">
                     <h3>Portafolio Artístico</h3>
                     <p>Sitio web para mostrar trabajos creativos con galería interactiva.</p>
                     <a href="https://frondendstore1.netlify.app/" target="_blank" class="btn-ver-mas">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Proyecto 7 -->
+            <div class="project-card">
+                <div class="project-img"><img src="/Mis proyectos/Menu-Digital/Menu digital.png" alt="Proyecto 2"></div>
+                <div class="project-info">
+                    <h3>Menú digital</h3>
+                    <p>Este proyecto consiste en el desarrollo de un menú digital interactivo para restaurantes, que permite a los clientes visualizar productos, precios y categorías de forma clara y atractiva desde cualquier dispositivo.</p>
+                    <button class="btn-ver-mas" onclick="openModal('modalProject4', gymAppImages)">Ver más</button>
                 </div>
             </div>
         </div>
@@ -204,6 +214,23 @@
                 </p>
             </div>
         </div>
+        
+        <div id="modalProject4" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modalProject4')">&times;</span>
+                <img src="/Mis proyectos/Menu-Digital/menu vistas.png">
+                <h2>Tecnologías:</h2>
+                <p>
+                    - Frontend: React y Next.js, con HTML, CSS y JavaScript para una interfaz dinámica y responsive.<br>
+                    - Backend: Node.js con Express para la gestión de pedidos, productos y negocios.<br>
+                    - Base de datos: PostgreSQL / MySQL para el almacenamiento de información del menú y órdenes.<br>
+                    - Arquitectura: Separación en frontend (cliente), backend (API REST) y panel administrativo.<br>
+                    - Funcionalidades: Visualización de menús, categorías y productos, sistema de pedidos, CRUD desde panel admin.<br>
+                    - Estilo: Diseño responsive y experiencia de usuario enfocada en dispositivos móviles.
+                </p>
+            </div>
+        </div>
+
     </section>
 
     <!-- Sección BLOG -->
@@ -258,11 +285,9 @@
             "/Mis proyectos/GymApp/Gym App_page-0017.jpg",
             "/Mis proyectos/GymApp/Gym App_page-0018.jpg"
             
-            // Agregar más si quieres
         ];
         const hotelImages = [
             "/Mis proyectos/Hotel/Hotel.png"
-            // Agregar más si quieres
         ];
 
         let currentImages = [];
